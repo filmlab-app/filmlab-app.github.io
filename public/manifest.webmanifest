@@ -2,7 +2,7 @@
   "name": "FilmLab",
   "short_name": "FilmLab",
   "description": "In-camera RAW conversion and film recipes for Fujifilm cameras.",
-  "id": "/filmlab/",
+  "id": "/",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

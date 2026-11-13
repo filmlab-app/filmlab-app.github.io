@@ -5,6 +5,8 @@ Chrome on Android. RAW files are converted **inside the camera** over WebUSB —
 the same principle as Fujifilm X RAW Studio — and film recipes can be managed
 and loaded onto the camera's custom slots.
 
+**Live:** https://filmlab-app.github.io/ (own domain, so it can be installed in Chrome next to other apps)
+
 **Status: complete — Phases 0–3 (connection, editor, library, recipes, camera slots), installable as an offline PWA.**
 
 ## Project structure
@@ -61,7 +63,10 @@ the installed PWA does the same without a signing key.)
 
 1. GitHub → repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 2. Push. The workflow `.github/workflows/deploy.yml` builds and publishes.
-3. The site appears at `https://<user>.github.io/filmlab/` (HTTPS — needed for WebUSB).
+3. The site appears at `https://filmlab-app.github.io/` (HTTPS — needed for WebUSB).
+   This repository is named `<organization>.github.io`, so GitHub serves it at the
+   root of its own domain. Chrome on Android only lets one PWA per domain be
+   installed, so FilmLab got its own (free) GitHub organization.
 
 ## How it works
 

@@ -4,7 +4,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, 'ccr-*']
+    branches: [main]
   workflow_dispatch: # adds a "Run workflow" button in the Actions tab
 
 permissions:
